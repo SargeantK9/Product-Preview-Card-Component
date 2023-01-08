@@ -32,8 +32,6 @@ main {
   width: 600px;
 }
 
-/* Why does landmark tag picture allow overflow?! */
-
 .picture {
   width: 50%;
   border-radius: var(--font-size) 0 0 var(--font-size);
