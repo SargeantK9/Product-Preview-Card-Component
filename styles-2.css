@@ -16,7 +16,6 @@ body {
 
 main {
   background-color: var(--cream);
-  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,7 +41,6 @@ main {
   font-size: var(--font-size);
   background-color: white;
   border-radius: 0 0 var(--font-size) var(--font-size);
-  flex-shrink: 0;
 }
 
 h1 {
