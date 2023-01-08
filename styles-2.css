@@ -17,19 +17,25 @@ body {
 main {
   max-width: var(--small-screen);
   background-color: var(--cream);
-  align-items: center;
-  justify-content: center;
-  display: flex;
   margin: auto;
+  display: flex;
+  min-height: 100vh;
 }
 
 .content {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: var(--font-size);
   margin: calc(var(--font-size)*1.5) var(--font-size);
+}
+
+picture {
+  font-size: 0;
+  flex-shrink: 0;
 }
 
 .picture {
@@ -42,6 +48,7 @@ main {
   font-size: var(--font-size);
   background-color: white;
   border-radius: 0 0 var(--font-size) var(--font-size);
+  flex-shrink: 0;
 }
 
 h1 {
@@ -58,7 +65,7 @@ h1 {
 
 .price h1 {
   color: var(--dark-cyan);
-  padding-right: var(--font-size);
+  padding-right: calc(var(--font-size)*1.5);
 }
 
 button {
