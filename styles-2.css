@@ -15,43 +15,39 @@ body {
 }
 
 main {
+  max-width: var(--small-screen);
   background-color: var(--cream);
-  display: flex;
   align-items: center;
   justify-content: center;
+  display: flex;
   min-height: 100vh;
 }
 
 .content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: var(--font-size);
   margin: calc(var(--font-size)*1.5) var(--font-size);
-  width: 600px;
 }
 
-/* Why does landmark tag picture allow overflow?! */
-
 .picture {
-  width: 50%;
-  border-radius: var(--font-size) 0 0 var(--font-size);
+  width: 100%;
+  border-radius: var(--font-size) var(--font-size) 0 0;
 }
 
 .text-content {
-  padding: calc(var(--font-size)*2);
+  padding: calc(var(--font-size)*1.5);
   font-size: var(--font-size);
   background-color: white;
-  border-radius: 0 var(--font-size) var(--font-size) 0;
-  width: 40%;
+  border-radius: 0 0 var(--font-size) var(--font-size);
 }
 
 h1 {
   font-family: "Fraunces", serif;
   font-weight: 700;
-  font-size-adjust: 0.55;
-  margin: calc(var(--font-size) * 1.5) 0;
+  margin: var(--font-size) 0;
 }
 
 .price {
