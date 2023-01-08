@@ -87,3 +87,9 @@ p {
   line-height: 1.5;
   margin: 0;
 }
+
+@media screen and (orientation:portrait) {
+  .content {
+    width: 350px;
+  }
+}
