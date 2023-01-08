@@ -91,5 +91,6 @@ p {
 @media screen and (orientation:portrait) {
   .content {
     width: 350px;
+    flex-direction: column;
   }
 }
