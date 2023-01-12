@@ -30,7 +30,11 @@
 <body>
   <main>
     <div class="content">
-      <img class="picture" srcset="images/image-product-mobile.jpg 375w, images/image-product-desktop.jpg 600w" sizes="(orientation: portrait) 375px, 600px" src="images/image-product-desktop.jpg" alt="perfume-bottle-image" />
+      <picture>
+        <source media="(orientation: portrait)" srcset="images/image-product-mobile.jpg" />
+        <source media="(orientation: landscape)" srcset="images/image-product-desktop.jpg" />
+        <img src="images/image-product-mobile.jpg" alt="perfume-bottle-image" />
+      </picture>
       <div class="text-content">
         <p>P E R F U M E</p>
         <h1>Gabrielle Essence Eau De Parfum</h1>

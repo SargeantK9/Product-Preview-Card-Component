@@ -32,7 +32,7 @@ main {
   width: 600px;
 }
 
-.picture {
+picture {
   width: 50%;
   border-radius: var(--font-size) 0 0 var(--font-size);
 }
@@ -49,7 +49,7 @@ h1 {
   font-family: "Fraunces", serif;
   font-weight: 700;
   margin: calc(var(--font-size) * 1.5) 0;
-  line-height: 1;
+  font-size-adjust: 0.55;
 }
 
 .price {
@@ -84,13 +84,13 @@ button img {
 }
 
 p {
-  line-height: 2;
+  line-height: 1.5;
   margin: 0;
 }
 
 @media (orientation: portrait) {
   .content {
-    width: 350px;
+    width: auto;
     flex-direction: column;
   }
 }
