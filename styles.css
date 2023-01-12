@@ -98,10 +98,14 @@ p {
   :root {
     --font-size: 1rem;
   }
-  
+
   .content {
     flex-direction: column;
     width: calc(var(--font-size) * 25);
+  }
+
+  picture {
+    width: 20rem;
   }
 
   picture img {
