@@ -6,7 +6,7 @@
   --very-dark-blue: hsl(212, 21%, 14%);
   --dark-grayish-blue: hsl(228, 12%, 48%);
   --white: hsl(0, 0%, 100%);
-  --font-size: 14px;
+  --font-size: 1.25rem;
 }
 
 body {
@@ -29,11 +29,17 @@ main {
   font-weight: 400;
   font-size: var(--font-size);
   margin: calc(var(--font-size)*1.5) var(--font-size);
-  width: 600px;
 }
 
 picture {
-  width: 50%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+picture img {
+  height: 100%;
+  width: 30rem;
   border-radius: var(--font-size) 0 0 var(--font-size);
 }
 
@@ -42,13 +48,13 @@ picture {
   font-size: var(--font-size);
   background-color: white;
   border-radius: 0 var(--font-size) var(--font-size) 0;
-  width: 40%;
+  width: 20rem;
 }
 
 h1 {
   font-family: "Fraunces", serif;
   font-weight: 700;
-  margin: calc(var(--font-size) * 1.5) 0;
+  margin: calc(var(--font-size) * 2) 0;
   font-size-adjust: 0.55;
 }
 
@@ -90,7 +96,23 @@ p {
 
 @media (orientation: portrait) {
   .content {
-    width: auto;
     flex-direction: column;
+    width: calc(var(--font-size) * 25);
+  }
+
+  picture img {
+    width: 100%;
+    border-radius: var(--font-size) var(--font-size) 0 0;
+  }
+
+  .text-content {
+    width: 84%;
+    border-radius: 0 0 var(--font-size) var(--font-size);
+  }
+
+  h1 {
+    margin: calc(var(--font-size) * 1.25) 0;
+    font-size-adjust: none;
+    line-height: 1;
   }
 }
