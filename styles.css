@@ -95,6 +95,10 @@ p {
 }
 
 @media (orientation: portrait) {
+  :root {
+    --font-size: 1rem;
+  }
+  
   .content {
     flex-direction: column;
     width: calc(var(--font-size) * 25);
@@ -106,7 +110,7 @@ p {
   }
 
   .text-content {
-    width: 84%;
+    padding: calc(var(--font-size)*1.5);
     border-radius: 0 0 var(--font-size) var(--font-size);
   }
 
